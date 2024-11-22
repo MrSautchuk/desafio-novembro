@@ -18,7 +18,7 @@
     
         <ul class="menu">
             <li><a href="/desafio-novembro/src/Home/index.html">Home</a></li>
-            <li><a href="#">Carrinho</a></li>
+            <li><a id="carrinhoBtn1">Carrinho</a></li>
             <li><a href="/desafio-novembro/src/Produtos/Produtos.html">Produtos</a></li>
         </ul>
     
@@ -28,6 +28,19 @@
         <h1 id="titulo">Produtos</h1> 
             <div id="produtos"></div> 
     </main>
+
+    <!-- Botão para abrir o modal -->
+<button id="carrinhoBtn">Ver Carrinho</button>
+
+<!-- O Modal -->
+<div id="carrinhoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Seu Carrinho</h2>
+        <div id="carrinho"></div> <!-- Container para os itens do carrinho -->
+    </div>
+</div>
+
 
     <footer>
         <div class="div-footer">
@@ -39,9 +52,9 @@
             <div class="footer-section links">
                 <h3>Links Rápidos</h3>
                 <ul style="margin: 30px;">
-                    <li style="margin-bottom: 10px;"><a href="#">Home</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#">Produtos</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#">Sobre</a></li>
+                    <li style="margin-bottom: 10px;"><a href="/desafio-novembro/src/Home/index.html">Home</a></li>
+                    <li style="margin-bottom: 10px;"><a href="/desafio-novembro/src/Produtos/Produtos.html">Produtos</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#Sobre">Sobre</a></li>
                     <li style="margin-bottom: 10px;"><a href="#">Contato</a></li>
                     <li style="margin-bottom: 10px;"><a href="#">FAQ</a></li>
                 </ul>

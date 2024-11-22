@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 #produtos {
   display: flex;
   gap: 30px;
@@ -51,14 +57,6 @@
   background-color: #218838;
 }
 
-
-
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -71,26 +69,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#sessao1 {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-
-.sessao2 {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  margin: 100px 0 100px 0
 }
 
 .lista {
@@ -193,6 +171,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: end;
+  height: 10px;
 }
 
 .container-footer {
@@ -200,4 +179,118 @@ footer {
   align-items: center;
   justify-content: space-around;
   margin-top: 20px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* botao */
+
+/* Estilo para o botão "Conferir" */
+button {
+  background-color: #28a745; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
+  padding: 12px 24px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+  background-color: #218838; /* Cor de fundo ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Estilo do botão ao clicar */
+button:active {
+  background-color: #1e7e34; /* Cor de fundo ao clicar */
+  transform: translateY(0); /* Restaura a posição */
+}
+
+
+/* Estilo para o botão "Remover do Carrinho" */
+.produto-no-carrinho button {
+  background-color: #dc3545; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branca */
+  border: none; /* Remove a borda padrão */
+  padding: 8px 16px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+.produto-no-carrinho button:hover {
+  background-color: #c82333; /* Cor de fundo ao passar o mouse */
+}
+
+
+/* Estilo para os botões de quantidade */
+.produto-no-carrinho button {
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Cor do texto branca */
+  border: none; /* Remove a borda padrão */
+  padding: 6px 12px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  margin: 0 5px; /* Espaçamento entre os botões */
+}
+
+.produto-no-carrinho button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.produto-no-carrinho p {
+  display: inline; /* Exibir o parágrafo em linha */
+  margin: 0 10px; /* Espaçamento entre elementos */
+}
+
+#carrinho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a52a2a45;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px 2px;
 }

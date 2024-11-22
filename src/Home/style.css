@@ -144,3 +144,31 @@ footer {
   justify-content: space-around;
   margin-top: 20px;
 }
+
+/* botao Conferir */
+
+/* Estilo para o botão "Conferir" */
+button {
+  background-color: #28a745; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
+  padding: 12px 24px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+  background-color: #218838; /* Cor de fundo ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Estilo do botão ao clicar */
+button:active {
+  background-color: #1e7e34; /* Cor de fundo ao clicar */
+  transform: translateY(0); /* Restaura a posição */
+}
